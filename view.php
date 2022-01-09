@@ -13,7 +13,7 @@
 </head>
 <body>
 	
-	<button type="submit" name="upload_more"><a href="index.php"> Upload more </a></button>
+	<button type="submit" id="top" name="upload_more"><a href="index.php"> Upload more </a></button>
 
 	<?php 
 		$sql = "SELECT * FROM images ORDER BY id DESC";
