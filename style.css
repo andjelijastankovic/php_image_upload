@@ -19,12 +19,18 @@ body {
 #top:hover {
     background-color: rgb(106, 140, 241);
     text-transform: uppercase;
+    border: 3px solid red;
 }
 
 #top a {
     display: block;
     color:rgb(8, 6, 163);
     font-weight: bolder;
+    text-decoration: none;
+}
+
+#top a:hover {
+    color: red;
 }
 
 .photo_div {
@@ -38,9 +44,25 @@ body {
     height: 100%;
 }
 
-a {
+#input, #submit_button {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid rgb(8, 6, 163);
+    border-radius: 3px;
+    background-color: powderblue;
     text-decoration: none;
-    color: black;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+    color:rgb(8, 6, 163);
+    font-weight: bolder;
+}
+
+#input:hover, #submit_button:hover {
+    background-color: rgb(106, 140, 241);
 }
 
 .myImg {
@@ -73,6 +95,7 @@ a {
     display: block;
     width: 80%;
     max-width: 700px;
+    max-height: 500px;
 }
 
 /* Add Animation */
@@ -106,6 +129,6 @@ a {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
-      width: 100%;
+      width: 80%;
     }
 }
